@@ -1,0 +1,8 @@
+Between all the codecs, VP8 works the worst.
+Basically because VP9 is an improved version.
+
+VP9 I feel is the one that works the best visually, 
+but it is the one that has more size.
+
+H265 and AV1 work a little bit worse than VP9.
+Nevertheless, they occuppy less so they are more efficient.

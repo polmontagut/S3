@@ -8,7 +8,7 @@ def delete_files():  # deletes all files in a folder
         os.remove(filename)
 
 
-def delete_mp4():
+def delete_mp4():  # deletes the resize .mp4 video used for encoding if the user has selected both options
     path = glob.glob('videos/*')
     for filename in path:
         if filename.endswith(".mp4"):

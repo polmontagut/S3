@@ -5,7 +5,7 @@ import resize_video
 import deletes
 
 
-def create_video():
+def create_video():  # creates the video depending on the user's choice of options
     resolution = resolutions.get()
     encoder = encoders.get()
     video = "bbb.mp4"
@@ -27,9 +27,11 @@ def create_video():
     tk.messagebox.showinfo(title="VideoCreated", message="Video created in the videos folder!")
 
 
+# creation of the window
 window = tk.Tk()
 window.config(width=300, height=200)
 window.title("Video converter")
+
 
 # resolution
 res = tk.Label(window, text="Insert resolution (720p default) :")
@@ -57,7 +59,3 @@ okey = ttk.Button(text="Okey", command=create_video)
 okey.place(x=50, y=150)
 
 window.mainloop()
-
-#width, height = resize_video.get_dimensions(video)
-#resize_video.options_resize(video, width, height)  # opens the resize menu
-#encode_video.convert_video_h265(video)
